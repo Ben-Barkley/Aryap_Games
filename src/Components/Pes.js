@@ -25,14 +25,16 @@ function Fifa() {
     <section id='pes'>
 
       <h1 class="section-title-01">Konami</h1>
-      <h1 class="section-title-02">Efootball</h1>
+      <h1 class="section-title-02" >Efootball</h1>
 
       
     <div className="pes_patch">
          <div className="pes_details">
             <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-            <div class="card ">
+            <div class="card " data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine">
             <img src={pes2} alt="" />
             <div className="pes_button">
                 <Button>View Here</Button>
@@ -40,7 +42,9 @@ function Fifa() {
             </div>
   </div>
             <div class="col">
-            <div class="card ">
+            <div class="card " data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-duration="300">
             <img src={pes1} alt="" />
             <div className="pes_button">
             <Button>View Here</Button>
@@ -76,12 +80,14 @@ function Fifa() {
             </div>
             
     
-            <div className="patch_img">
+            <div className="patch_img" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
             <img src={pes1} alt="" />
             </div>
 </div>
 
-<div className="pes_button">
+<div className="pes_button" data-aos="fade-down" data-aos-duration="2000">
 <Button style={{width: '10em', border:'none' ,  marginBottom: "30px" }} variant="" >Download</Button>
 </div>
 
