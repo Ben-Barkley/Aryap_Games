@@ -1,0 +1,614 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Signika:wght@300;700&display=swap');
+/* body{
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+} */
+
+/* @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+
+
+/* START NAVBAR & HERO SECTION */
+section{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #333;
+  color: #f9f9f9;
+  /* overflow-x: hidden; */
+  
+}
+
+.container{
+  background-color: #141416;
+  color: #f9f9f9;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vh;
+  min-height: 100vh;
+  padding: 50px;
+}
+
+ .show-nav {
+  transform: rotate(-20deg);
+}
+
+.circle-container{
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle{
+  background-color: #e30000;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open{
+  left:60%;
+  color: #fff;
+}
+
+.circle button#close{
+  top:60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.container .show-nav  nav li{
+  transform: translateX(6);
+  transition-delay: 0.3s;
+}
+
+.container.show-nav .circle {
+  transform:rotate(-70deg);
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+  
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 10px;
+  font-family: 'Signika', sans-serif;
+}
+
+nav ul li{
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  transform: translate(-100);
+  transition: transform 0.4s ease-in;
+  cursor: pointer;
+}
+
+nav ul li i{
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+nav ul li  li{
+ margin-left: 15px;
+ transform: translateX(-150%);
+}
+
+nav ul li  li  li{
+  margin-left: 30px;
+  transform: translateX(-200%);
+ }
+
+ section .content{
+  width: 100%;
+  margin: 50px auto;
+ }
+
+ .content h1{
+  font-family: 'Arvo', serif;
+ }
+
+ .content p{
+  color: #eaeaea;
+  line-height: 1.5;
+  font-family: 'Signika', sans-serif;
+  font-size: 20px;  
+ }
+
+ .content .hero_img img{
+  width: 105%;
+  margin-right: 20em;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+ }
+
+ /* END NAVBAR & HERO SECTION */
+
+
+
+
+ /* START PES SECTION */
+ #pes{
+  background-color: #333;
+  max-width: 100%;
+  text-align: center;
+  align-items: center;
+ } 
+
+ .section-title-01{
+  font-size: 4.5em;
+  font-weight: 800;
+  margin-bottom: 2rem;
+  background: linear-gradient(to top, transparent 0%, rgb(167, 166, 166) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: .1;
+  text-align:center;
+} 
+
+.section-title-02{
+  font-size: 2.5em;
+  font-weight: 700;
+  transform: translateY(-80px);
+  text-align: center;
+}
+
+.section-title-02::before{
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 5px;
+  right: 35.8rem;
+  bottom: 0;
+  background:  #e30000;
+}
+
+#pes .pes_patch {
+  display: flex;
+  padding: 0px 90px;
+  max-width: 100%;
+}
+#pes .pes_patch .pes_card{
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  margin-left: 2em;
+}
+#pes .pes_patch .pes_img{
+  height: 50vh;
+}
+#pes .football_life_update{
+  align-items: center;
+  display: flex;
+}
+#pes .patch_heading h3{
+  align-items: center;
+  justify-content: center;
+  font-family: 'Signika', sans-serif;
+  margin: 30px 400px;
+  font-size: 28px;
+  font-weight: bold; 
+}
+#pes .patch_text{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;  
+}
+
+#pes .patch_text h4{
+  padding-left: 120px;
+  /* font-family: 'Arvo', serif; */
+  font-family: 'Signika', sans-serif;
+}
+#pes .patch_text ul{
+  padding-left: 120px;
+  font-family: 'Catamaran', sans-serif;
+  font-family: 'Signika', sans-serif;
+  font-size: 20px;
+}
+#pes .patch_text p{
+  padding-left: 120px;
+  font-family: 'Arvo', serif;
+  font-size: 20px;
+}
+
+#pes .patch_img img{
+  width: 37em;
+  margin-left: 25px;
+  margin-bottom: 50px;
+  border: 2px;
+  border-radius: 2px 3px;
+}
+#pes .pes_button button{
+  background: rgb(199, 5, 37);
+  color: black;
+  font-family: 'Signika', sans-serif;
+}
+#pes .pes_button button:hover{
+  background: #fff;
+  color: black;
+  font-weight: 600;
+  transition: 0.7s;
+}
+
+ /* END PES SECTION */
+
+
+ 
+  /* FIFA PES SECTION */
+#fifa{
+  background-color: #333;
+  height: 100%;
+}
+  #fifa .fifa_card img{
+    height: 70vh;
+    width: 82%;
+    margin-left: 8em;
+  }
+  #fifa .fifa_mod{
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+  }
+  #fifa .patch_heading h3{
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arvo', serif;
+    margin: 30px 400px;
+    font-size: 28px;
+    font-weight: bold; 
+  }
+  #fifa .patch_text{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 0px 0px 80px -30px;
+  
+  }
+  
+  #fifa .patch_text h4{
+    padding-left: 120px;
+    font-family: 'Signika', sans-serif;
+  }
+  #fifa .patch_text ul{
+    padding-left: 120px;
+    font-family: 'Arvo', serif;
+    font-size: 20px;
+    font-family: 'Signika', sans-serif;
+  }
+  #fifa .patch_text p{
+    padding-left: 120px;
+    font-family: 'Signika', sans-serif;
+    font-size: 20px;
+  }
+  
+  #fifa .patch_img img{
+    height: 50vh;
+    width: 38em;
+    margin-left: 8em;
+    margin-bottom: 50px;
+    border: 2px;
+    border-radius: 2px 3px;
+  }
+
+  #fifa .fifa_button button{
+    background: rgb(199, 5, 37);
+    color: black;
+    font-family: 'Signika', sans-serif;
+  }
+  #fifa .fifa_button button:hover{
+    background: #fff;
+    color: black;
+    font-weight: 600;
+    transition: 0.7s;
+  }
+
+   /* END FIFA SECTION */
+
+
+
+   /* side navbar */
+/*    
+header{
+  z-index: 1;
+  position: fixed;
+  background: #22242A;
+  padding: 20px;
+  width: calc(100% - 0%);
+  top: 0;
+  height: 70px;
+}
+
+.left_area{
+  margin-bottom: 4px;
+}
+
+.left_area h3{
+  color: #fff;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.left_area span{
+  color: #19B3D3;
+}
+
+.logout_btn{
+  padding: 5px;
+  background: #19B3D3;
+  text-decoration: none;
+  float: right;
+  margin-top: -40px;
+  margin-right: 40px;
+  border-radius: 2px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.logout_btn:hover{
+  background: #0B87A6;
+}
+
+.sidebar{
+  z-index: 1;
+  top: 0;
+  background: #2f323a;
+  margin-top: 70px;
+  padding-top: 30px;
+  position: fixed;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  transition: 0.5s;
+  transition-property: left;
+  overflow-y: auto;
+}
+
+.profile_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar .profile_info .profile_image{
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+
+.sidebar .profile_info h4{
+  color: #ccc;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.sidebar a{
+  color: #fff;
+  display: block;
+  width: 100%;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 40px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transition-property: background;
+}
+
+.sidebar a:hover{
+  background: #19B3D3;
+}
+
+.sidebar i{
+  padding-right: 10px;
+}
+
+label #sidebar_btn{
+  z-index: 1;
+  color: #fff;
+  position: fixed;
+  cursor: pointer;
+  left: 300px;
+  font-size: 20px;
+  margin: 5px 0;
+  transition: 0.5s;
+  transition-property: color;
+}
+
+label #sidebar_btn:hover{
+  color: #19B3D3;
+}
+
+#check:checked ~ .sidebar{
+  left: -185px;
+}
+
+#check:checked ~ .sidebar a span{
+  display: none;
+}
+
+#check:checked ~ .sidebar a{
+  font-size: 20px;
+  margin-left: 165px;
+  width: 100%;
+}
+
+.content{
+  width: (100% - 250px);
+  margin-top: 60px;
+  padding: 20px;
+  margin-left: 250px;
+  height: 100vh;
+  transition: 0.5s;
+}
+
+#check:checked ~ .content{
+  margin-left: 60px;
+}
+
+#check:checked ~ .sidebar .profile_info{
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+.mobile_nav{
+  display: none;
+}
+
+.content .card p{
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+} */
+
+/* START FOOTER */
+#footer .footer_text {
+  background: #3f4147c0;
+  height: 5vh;
+}
+
+.footer_text{
+  color: rgba(8, 8, 8, 0.753);
+  text-align: center;
+}
+
+.footer_text h3{
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 10px;
+  font-family: 'Signika', sans-serif;
+}
+
+/* END FOOTER */
+
+
+/* Responsive CSS */
+
+@media screen and (max-width: 780px) {
+
+  .sidebar{
+    display: none;
+  }
+
+  #sidebar_btn{
+    display: none;
+  }
+
+  .content{
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+
+  #check:checked ~ .content{
+    margin-left: 0;
+  }
+
+  .mobile_nav{
+    display: block;
+    width: calc(100% - 0%);
+  }
+
+  .nav_bar{
+    background: #222;
+    width: (100% - 0px);
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+
+  .nav_bar .mobile_profile_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+
+  .nav_bar .nav_btn{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+  }
+
+  .nav_bar .nav_btn:hover{
+    color: #19B3D3;
+  }
+
+  .mobile_nav_items{
+    background: #2F323A;
+    display: none;
+  }
+
+  .mobile_nav_items a{
+    color: #fff;
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 60px;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+  }
+
+  .mobile_nav_items a:hover{
+    background: #19B3D3;
+  }
+
+  .mobile_nav_items i{
+    padding-right: 10px;
+  }
+
+  .active{
+    display: block;
+  }
+
+}
+
+
+  
