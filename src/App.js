@@ -9,7 +9,7 @@ import Fifa from './Components/Fifa';
 
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
-// import Pes from './Components/Pes';
+import Pes from './Components/Pes';
 import Footer from './Components/Footer';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
       <Route >
       
         <Route path="/" element={ <Navbar/>}/>
-        {/* <Route path="/pes"/> */}
+        <Route path="/pes"/>
         <Route path="/fifa"  exact/>
         <Route path="/hero" element={ <Hero />} exact/>
       </Route>
@@ -47,7 +47,7 @@ function App() {
      </BrowserRouter> */}
 
      
-    {/* <Pes/> */}
+    <Pes/>
     <Fifa/> 
      <Footer/>
     {/* <Hero/>  */}

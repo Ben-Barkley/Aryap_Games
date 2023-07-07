@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react'
 // import Container from 'react-bootstrap/Container';
-// import '../../src/Components/Style.css'
+
 import './Style.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
